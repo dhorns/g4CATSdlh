@@ -14,9 +14,13 @@
 #
 /run/initialize
 #
+# muon 300 MeV in direction (0.,0.,1.)
+/gun/particle proton
+/gun/energy 1000 MeV
+#
 # Default kinemtics:  
 # electron 300 MeV in direction (0.,0.,1.)
 # 10000 events
 #
-/run/printProgress 1000
+/run/printProgress 5000
 /run/beamOn 10000

@@ -50,6 +50,7 @@ set(EXAMPLE_SCRIPTS
   plotNtuple.C
   run1.mac
   run2.mac
+  run3.mac
   vis.mac
   )
 

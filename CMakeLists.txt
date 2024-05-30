@@ -33,7 +33,8 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 #----------------------------------------------------------------------------
 # Add the executable, and link it to the Geant4 libraries
 #
-add_executable(g4CATS g4CATS.cc ${sources} ${headers})
+#add_executable(g4CATS g4CATS.cc ${sources} ${headers})
+add_executable(g4CATS ${sources} ${headers})
 target_link_libraries(g4CATS ${Geant4_LIBRARIES})
 
 #----------------------------------------------------------------------------
@@ -42,7 +43,6 @@ target_link_libraries(g4CATS ${Geant4_LIBRARIES})
 # relies on these scripts being in the current working directory.
 #
 set(EXAMPLE_SCRIPTS
-  g4CATS.out
   g4CATS.in
   gui.mac
   init_vis.mac
